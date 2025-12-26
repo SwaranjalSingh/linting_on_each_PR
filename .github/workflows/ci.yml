@@ -82,6 +82,11 @@ jobs:
       - name: Run tests
         run: |
           pytest
+          
+      - name: Debug workspace
+        run: |
+          pwd
+          ls -la
 
       # 7️⃣ Docker build
       - name: Build Docker image
