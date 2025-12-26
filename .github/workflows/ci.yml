@@ -38,6 +38,7 @@
 name: Extended CI Pipeline
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - main
