@@ -83,10 +83,9 @@ jobs:
         run: |
           pytest
           
-      - name: Debug workspace
-        run: |
-          pwd
-          ls -la
+      - name: Verify files
+        run: ls -la
+
 
       # 7️⃣ Docker build
       - name: Build Docker image
