@@ -86,13 +86,8 @@ jobs:
       - name: Verify files
         run: ls -la
 
-      - name: Verify Docker
+      - name: Verify Docker installation            # github hosted runner has docker pre-installed
         run: docker version
-
-      # -
-      #   name: Set up Docker Buildx
-      #   uses: docker/setup-buildx-action@v2
-
 
       # 7️⃣ Docker build
       - name: Build Docker image
